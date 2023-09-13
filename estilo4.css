@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: red;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: rgb(39, 37, 37);;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+section h2{
+    color: white;
+    font-size: 2.5rem;
+    margin: 2rem;
+
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+form label{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+    resize: none;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: white;
+    color:gray;
+    border-radius: 16px;
+}
+.placa{
+    rotate:-90deg;
+    position: absolute;
+    left: 0;
+}
+
+/*obrigado*/
+
+.main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    flex-direction: column;
+}
+
+.text{
+    font-size: 45px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.paragrafo{
+    color: white;
+    margin-bottom: 50px;
+
+}
+
+.btn{
+    padding: 15px 55px;
+    background: white;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.bnt:hover{
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 414px) and (max-height: 896px) {
+
+    .placa {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 30%;
+        padding: 10px;
+        z-index: 999; /* Isso garante que o elemento fique acima de outros elementos da página */
+    }
+}
