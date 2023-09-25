@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: red;
+    box-shadow: 0px 3px 10px #464646;
+    position: fixed; /* Fixa o cabeçalho no topo */
+    width: 100%; /* Largura total */
+    top: 0; /* Alinha o cabeçalho no topo */
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo nome {
+    color: #fff;
+    padding-left: 50px;
+    font-size: x-large;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.pt .nav-item {
+    margin: 0px;
+    margin-left: 35px;
+}
+
+.pt .nav-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 400;
+}
+
+.pt .nav-link:hover {
+    color: white;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: white;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 10px 45px;
+    background: rgb(39, 37, 37);
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+section h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+form input:focus {
+    border-radius: 16px;
+}
+
+form textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+    resize: none;
+}
+
+form textarea:focus {
+    border-radius: 16px;
+}
+
+form button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover {
+    background: white;
+    color: gray;
+    border-radius: 16px;
+}
+
+/* obrigado */
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 45px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.paragrafo {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.btn {
+    padding: 15px 55px;
+    background: white;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    border-radius: 16px;
+}
+footer {
+    background-color: #ff0707;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    position: fixed; /* Fixa o footer no final */
+    width: 100%; /* Largura total */
+    bottom: 0; /* Alinha o footer na parte inferior */
+}
+
+@media screen and (max-width: 730px) {
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        padding-top: 6px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open .nav-item {
+        display: block;
+    }
+
+    .open {
+        display: block;
+    }
+}
