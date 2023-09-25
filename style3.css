@@ -28,11 +28,13 @@ header {
 }
 
 .logo nome {
-    color: #fff;
+    color: white;
     padding-left: 50px;
     font-size: x-large;
 }
-
+nome {
+    color: white;
+}
 .nav-list {
     display: flex;
     align-items: center;

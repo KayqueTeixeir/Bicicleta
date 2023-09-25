@@ -47,7 +47,12 @@
     <script src="script.js"></script>
     <section>
         <h2>Contact</h2>
-        <form action="https://api.staticforms.xyz/submit" method="post">
+
+        <div id="success-notification" style="display: none;">
+            <nome>Sent with success!</nome>
+         </div>    
+
+         <form id="contact-form" action="https://api.staticforms.xyz/submit" method="post">
             <label>Name</label>
             <input type="text" name="name" placeholder="Type your name" autocomplete="off" required>
             <label>Phone Number</label>
@@ -59,8 +64,30 @@
             <button type="submit">To send</button>
 
             <input type="hidden" name="accessKey" value="7b90ed83-b8b5-4f1d-90cf-7676badbda00">
-            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
-        </form>
+         </form>
+         <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const contactForm = document.getElementById('contact-form');
+                const successNotification = document.getElementById('success-notification');
+        
+                contactForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+        
+                    // Substitua o seguinte código pelo envio real do formulário, por exemplo, usando AJAX
+                    // Simulação de envio (remova esta parte no ambiente de produção)
+                    setTimeout(function () {
+                        // Exiba a notificação de sucesso
+                        successNotification.style.display = 'block';
+                        
+                        // Limpe o formulário (opcional)
+                        contactForm.reset();
+                        
+                        // Role para a notificação (opcional)
+                        successNotification.scrollIntoView({ behavior: 'smooth' });
+                    }, 1000); // Simula um atraso de 1 segundo para fins de demonstração
+                });
+            });
+        </script>
     </section>
     <footer>Kayque Teixeira 2023 -&copyAll rights reserved</footer>
 </body>
